@@ -184,7 +184,6 @@
 		0DA41FE21ADB483C00B58B0B /* SyncWaitHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = SyncWaitHandler.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		0DAA4C941B22B3FB0023B02C /* NSOperation+FutureKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSOperation+FutureKit.swift"; sourceTree = "<group>"; };
 		0DB979A01AE2A21100158386 /* BasicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = BasicTests.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		0DBB33421D0F973A0092BF7B /* Cancellation.MD */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Cancellation.MD; sourceTree = "<group>"; };
 		0DBB32EF1D0F91640092BF7B /* FutureKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FutureKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DBB32F11D0F91640092BF7B /* FutureKit watchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FutureKit watchOS.h"; sourceTree = "<group>"; };
 		0DBB32F31D0F91640092BF7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -194,6 +193,7 @@
 		0DBB33051D0F919C0092BF7B /* FutureKit tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FutureKit tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DBB330A1D0F919C0092BF7B /* FutureKit_tvOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FutureKit_tvOSTests.swift; sourceTree = "<group>"; };
 		0DBB330C1D0F919C0092BF7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DBB33421D0F973A0092BF7B /* Cancellation.MD */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Cancellation.MD; sourceTree = "<group>"; };
 		0DDE32601B38BD27007C39D9 /* FutureKit iOS Testing App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FutureKit iOS Testing App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DDE32631B38BD28007C39D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DDE32641B38BD28007C39D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -747,12 +747,14 @@
 					};
 					0DEA1B901AE30853000E126F = {
 						CreatedOnToolsVersion = 6.3;
+						LastSwiftMigration = 0800;
 					};
 					0DEA1BAE1AE30872000E126F = {
 						CreatedOnToolsVersion = 6.3;
 					};
 					0DEA1BE91AE3116A000E126F = {
 						CreatedOnToolsVersion = 6.3;
+						LastSwiftMigration = 0800;
 					};
 					0DEA1BFE1AE313DD000E126F = {
 						CreatedOnToolsVersion = 6.3;
@@ -1368,6 +1370,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.futurekit.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = FutureKit;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -1388,6 +1391,7 @@
 				PRODUCT_NAME = FutureKit;
 				SKIP_INSTALL = YES;
 				SWIFT_DISABLE_SAFETY_CHECKS = YES;
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -1455,6 +1459,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.futurekit.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "FutureKitTests/FutureKit iOS Tests-Bridging-Header.h";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -1471,6 +1476,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.futurekit.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "FutureKitTests/FutureKit iOS Tests-Bridging-Header.h";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -1536,6 +1542,7 @@
 				0DBB32F51D0F91640092BF7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0DBB330D1D0F919C0092BF7B /* Build configuration list for PBXNativeTarget "FutureKit tvOS" */ = {
 			isa = XCConfigurationList;
@@ -1544,6 +1551,7 @@
 				0DBB330F1D0F919C0092BF7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0DBB33101D0F919C0092BF7B /* Build configuration list for PBXNativeTarget "FutureKit tvOSTests" */ = {
 			isa = XCConfigurationList;
@@ -1552,6 +1560,7 @@
 				0DBB33121D0F919C0092BF7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0DDE327C1B38BD28007C39D9 /* Build configuration list for PBXNativeTarget "FutureKit iOS Testing App" */ = {
 			isa = XCConfigurationList;
